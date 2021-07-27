@@ -1,7 +1,10 @@
 import React from "react";
 
+import useStyles from "./styles";
+
 const Post = () => {
-	return <h1>POST</h1>;
+	const classes = useStyles();
+	return <h2>POST</h2>;
 };
 
 export default Post;
