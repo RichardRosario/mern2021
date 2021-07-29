@@ -3,8 +3,8 @@ const reducers = (posts = [], action) => {
 		case "FETCH_ALL":
 			return action.payload;
 
-		case "CREATE_POST":
-			return posts;
+		case "CREATE":
+			return [...posts, action.payload];
 
 		default:
 			return posts;
