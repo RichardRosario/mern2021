@@ -1,7 +1,7 @@
 // create post message model
 import mongoose from "mongoose";
 
-const postSchema = mongoose.Schema({
+const postSchema = new mongoose.Schema({
 	title: String,
 	message: String,
 	creator: String,
